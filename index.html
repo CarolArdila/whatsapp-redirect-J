@@ -2,17 +2,15 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Redirección a WhatsApp</title>
+  <title>Redirigiendo a WhatsApp...</title>
   <script>
-    window.onload = function () {
-      const numeros = [
-        "584264137495",
-        "593990078824"
-      ];
-      const numeroAleatorio = numeros[Math.floor(Math.random() * numeros.length)];
-      const mensaje = "Hola!, estoy interesada en más información.";
-      window.location.href = `https://wa.me/${numeroAleatorio}?text=${encodeURIComponent(mensaje)}`;
-    };
+    const phones = [
+      "573245500180",
+      "573247579751"
+    ];
+    const message = encodeURIComponent("Hola! Quiero más información, por favor");
+    const random = phones[Math.floor(Math.random() * phones.length)];
+    window.location.href = `https://wa.me/${random}?text=${message}`;
   </script>
 </head>
 <body>
